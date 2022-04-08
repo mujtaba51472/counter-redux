@@ -4,7 +4,6 @@ import { incrementCount , decrementCount } from '../redux/counter/CounterActions
 
  export const Counter = (props) => {
     console.log('props' , props)
-    
   return (
     <div>
     <button onClick={props.incrementCount}>+</button>
@@ -20,7 +19,9 @@ const mapStateToProps = state=> {
 }
 const mapDispatchToProps = dispatch=> {
     return {
-        decrementCount:()=>dispatch(decrementCount ())
+        decrementCount:()=>dispatch(decrementCount()),
+        incrementCount:()=>dispatch(incrementCount())
+
     }
 }
 
