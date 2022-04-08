@@ -1,8 +1,9 @@
 import { INCREMENT , DECREMENT } from "./counterTypes";
 
-export const  incrementCount = ()=> {
+export const  incrementCount = (number)=> {
     return {
-        type: INCREMENT
+        type: INCREMENT,
+        payload:number
     }
 
 }

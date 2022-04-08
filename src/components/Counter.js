@@ -20,11 +20,11 @@ const mapStateToProps = state=> {
 const mapDispatchToProps = dispatch=> {
     return {
         decrementCount:()=>dispatch(decrementCount()),
-        incrementCount:()=>dispatch(incrementCount())
+        incrementCount:()=>dispatch(incrementCount(5))
 
     }
 }
 
-export default connect(
+export default connect(   
     mapStateToProps , mapDispatchToProps
 )(Counter)
